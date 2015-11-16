@@ -2,6 +2,21 @@
     <string name="app_name">TrainCheck</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_add_tracker">Add Tracker</string>
+    <string name="title_activity_edit_tracker">EditTrackerActivity</string>
+    <string name="switch_status_enabled">Enabled</string>
+    <string name="switch_status_disabled">Disabled</string>
+    <string name="tracker_text_start_at">Start tracking at</string>
+    <string name="text_monday">Mo</string>
+    <string name="text_tuesday">Tu</string>
+    <string name="text_wednesday">We</string>
+    <string name="text_thursday">Th</string>
+    <string name="text_friday">Fr</string>
+    <string name="text_saturday">Sa</string>
+    <string name="text_sunday">Su</string>
+    <string name="text_done">Done</string>
+    <string name="text_to">to</string>
+    <string name="text_begin">Begin:</string>
+    <string name="text_end">End:</string>
 </resources>
