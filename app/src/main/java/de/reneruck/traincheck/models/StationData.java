@@ -1,4 +1,4 @@
-package de.reneruck.traincheck;
+package de.reneruck.traincheck.models;
 
 /**
  * Created by reneruck on 13/11/2015.
