@@ -3,4 +3,11 @@
     tools:context="de.reneruck.traincheck.MainActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" android:showAsAction="never" />
+
+    <item android:id="@+id/action_add_tracker" android:title="@string/action_add_tracker"
+        android:showAsAction="ifRoom" android:icon="@drawable/ic_action_content_add"/>
+
+    <item android:id="@+id/action_send_test_broadcast" android:title="Test Broadcast"
+        android:showAsAction="never" android:icon="@drawable/ic_action_action_bug_report"/>
+
 </menu>
