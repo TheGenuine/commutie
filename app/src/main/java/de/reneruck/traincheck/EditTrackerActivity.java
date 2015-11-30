@@ -49,8 +49,8 @@ public class EditTrackerActivity extends Activity {
         setupSpinner(R.id.select_primary_station, new String[]{}, stations, new String[]{});
         setupSpinner(R.id.select_direction_primary, new String[]{"Northbound", "Southbound"}, stations, new String[]{});
 
-        setupSpinner(R.id.select_secondary_station, new String[]{}, stations, new String[]{});
-        setupSpinner(R.id.select_direction_secondary, new String[]{"Northbound", "Southbound"}, stations, new String[]{});
+//        setupSpinner(R.id.select_secondary_station, new String[]{}, stations, new String[]{});
+//        setupSpinner(R.id.select_direction_secondary, new String[]{"Northbound", "Southbound"}, stations, new String[]{});
 
         findViewById(R.id.input_start_time).setOnClickListener(timeChooserListener);
         findViewById(R.id.input_end_time).setOnClickListener(timeChooserListener);
@@ -79,9 +79,8 @@ public class EditTrackerActivity extends Activity {
         ((TextView)findViewById(R.id.input_end_time)).setText(mCurrentTracker.getStopTrackingAtFormatted());
         ((Spinner) findViewById(R.id.select_primary_station)).setSelection(ArrayUtils.indexOf(stations, mCurrentTracker.getPrimaryStation()));
         ((Spinner) findViewById(R.id.select_direction_primary)).setSelection(ArrayUtils.indexOf(stations, mCurrentTracker.getDirectionPrimary()) + 2);
-        ((Spinner) findViewById(R.id.select_secondary_station)).setSelection(ArrayUtils.indexOf(stations, mCurrentTracker.getSecondaryStation()));
-        ((Spinner) findViewById(R.id.select_direction_secondary)).setSelection(ArrayUtils.indexOf(stations, mCurrentTracker.getDirectionSecondary()) + 2);
-        ((Switch) findViewById(R.id.enableSwitch)).setChecked(mCurrentTracker.isEnabled());
+//        ((Spinner) findViewById(R.id.select_secondary_station)).setSelection(ArrayUtils.indexOf(stations, mCurrentTracker.getSecondaryStation()));
+//        ((Spinner) findViewById(R.id.select_direction_secondary)).setSelection(ArrayUtils.indexOf(stations, mCurrentTracker.getDirectionSecondary()) + 2);
     }
 
     private void setDay(int fieldId, boolean selected) {
@@ -174,12 +173,12 @@ public class EditTrackerActivity extends Activity {
                 case R.id.select_direction_primary:
                     mCurrentTracker.setDirectionPrimary(value);
                     break;
-                case R.id.select_secondary_station:
-                    mCurrentTracker.setSecondaryStation(value);
-                    break;
-                case R.id.select_direction_secondary:
-                    mCurrentTracker.setDirectionSecondary(value);
-                    break;
+//                case R.id.select_secondary_station:
+//                    mCurrentTracker.setSecondaryStation(value);
+//                    break;
+//                case R.id.select_direction_secondary:
+//                    mCurrentTracker.setDirectionSecondary(value);
+//                    break;
             }
         }
 

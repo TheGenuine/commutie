@@ -34,9 +34,9 @@ public class TrackerCardProvider extends CardProvider<TrackerCardProvider> {
         ((TextView)view.findViewById(R.id.tracking_time_start)).setText(startTrackingAt);
         ((TextView)view.findViewById(R.id.tracking_time_end)).setText(stopTrackingAt);
         ((TextView)view.findViewById(R.id.primary_station)).setText(primaryStation);
-        ((TextView)view.findViewById(R.id.secondary_station)).setText(secondaryStation);
+//        ((TextView)view.findViewById(R.id.secondary_station)).setText(secondaryStation);
         ((TextView)view.findViewById(R.id.primary_direction)).setText(directionPrimary);
-        ((TextView)view.findViewById(R.id.secondary_direction)).setText(directionSecondary);
+//        ((TextView)view.findViewById(R.id.secondary_direction)).setText(directionSecondary);
         ((Switch)view.findViewById(R.id.enabled)).setChecked(enabled);
         ((Switch)view.findViewById(R.id.enabled)).setOnCheckedChangeListener(checkChangedListener);
         view.findViewById(R.id.text_side).setOnClickListener(cardClickListener);

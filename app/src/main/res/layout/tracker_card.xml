@@ -24,7 +24,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="4"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,36 +90,6 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Southbound"
                         android:id="@+id/primary_direction"
-                        android:layout_marginStart="20sp"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:padding="5sp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Ashtown"
-                        android:id="@+id/secondary_station"
-                        android:layout_marginStart="20sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="to"
-                        android:id="@+id/textView6"
-                        android:layout_marginStart="20sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Southbound"
-                        android:id="@+id/secondary_direction"
                         android:layout_marginStart="20sp"/>
 
                 </LinearLayout>
