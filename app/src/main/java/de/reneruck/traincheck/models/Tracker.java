@@ -151,7 +151,7 @@ public class Tracker {
     public static Tracker find(Context context, int trackerId) {
         DatabaseHelper databaseHelper = new DatabaseHelper(context, DbConfigs.databaseName, null, DbConfigs.databaseVersion);
         SQLiteDatabase readableDatabase = databaseHelper.getReadableDatabase();
-        Cursor query = readableDatabase.query(true, DbConfigs.TABLE_TRACKERS, new String[]{"*"}, "id = %d", new String[]{String.valueOf(trackerId)}, null, null, null, "1");
+        Cursor query = readableDatabase.query(true, DbConfigs.TABLE_TRACKERS, new String[]{"*"}, "id = ?", new String[]{String.valueOf(trackerId)}, null, null, null, "1");
         query.moveToFirst();
 
         return new Tracker(
