@@ -205,7 +205,7 @@ public class EditTrackerActivity extends Activity {
         switch (item.getItemId()) {
             case R.id.action_tracker_save:
                 if(mCurrentTracker.save(this)){
-                    finishActivity(mCurrentTracker.getTrackerId());
+                    finish();
                 } else {
                     Toast.makeText(this, "Something went wrong while saving the tracker", Toast.LENGTH_LONG).show();
                 }
