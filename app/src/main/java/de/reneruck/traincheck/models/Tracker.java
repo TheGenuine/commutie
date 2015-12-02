@@ -35,14 +35,12 @@ public class Tracker {
     public Tracker() {
     }
 
-    public Tracker(int trackerId, String startTrackingAt, String stopTrackingAt, String primaryStation, String directionPrimary, String secondaryStation,  String directionSecondary, boolean[] days, boolean enabled) {
+    public Tracker(int trackerId, String startTrackingAt, String stopTrackingAt, String primaryStation, String directionPrimary, boolean[] days, boolean enabled) {
         this.trackerId = trackerId;
         this.startTrackingAt = startTrackingAt;
         this.stopTrackingAt = stopTrackingAt;
         this.primaryStation = primaryStation;
-        this.secondaryStation = secondaryStation;
         this.directionPrimary = directionPrimary;
-        this.directionSecondary = directionSecondary;
         this.days = days;
         this.enabled = enabled;
     }
@@ -139,8 +137,6 @@ public class Tracker {
                     results.getString(results.getColumnIndex(DbConfigs.FIELD_STOP_TRACKING_AT)),
                     results.getString(results.getColumnIndex(DbConfigs.FIELD_PRIMARY_STATION)),
                     results.getString(results.getColumnIndex(DbConfigs.FIELD_DIRECTION_PRIMARY)),
-                    results.getString(results.getColumnIndex(DbConfigs.FIELD_SECONDARY_STATION)),
-                    results.getString(results.getColumnIndex(DbConfigs.FIELD_DIRECTION_SECONDARY)),
                     parseBooleanArray(results.getString(results.getColumnIndex(DbConfigs.FIELD_DAYS)).split(",")),
                     results.getInt(results.getColumnIndex(DbConfigs.FIELD_ENABLED)) > 1
             ));
@@ -160,8 +156,6 @@ public class Tracker {
                 query.getString(query.getColumnIndex(DbConfigs.FIELD_STOP_TRACKING_AT)),
                 query.getString(query.getColumnIndex(DbConfigs.FIELD_PRIMARY_STATION)),
                 query.getString(query.getColumnIndex(DbConfigs.FIELD_DIRECTION_PRIMARY)),
-                query.getString(query.getColumnIndex(DbConfigs.FIELD_SECONDARY_STATION)),
-                query.getString(query.getColumnIndex(DbConfigs.FIELD_DIRECTION_SECONDARY)),
                 parseBooleanArray(query.getString(query.getColumnIndex(DbConfigs.FIELD_DAYS)).split(",")),
                 query.getInt(query.getColumnIndex(DbConfigs.FIELD_ENABLED)) > 1
         );
