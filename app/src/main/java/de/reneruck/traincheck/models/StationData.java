@@ -10,6 +10,7 @@ public class StationData {
 
     private String trainCode;
     private String destination;
+    private String direction;
     private int dueIn;
     private int late;
     private String expDepart;
@@ -18,9 +19,10 @@ public class StationData {
     public StationData() {
     }
 
-    public StationData(String trainCode, String destination, int dueIn, int late, String expDepart, String schDepart) {
+    public StationData(String trainCode, String destination, String direction, int dueIn, int late, String expDepart, String schDepart) {
         this.trainCode = trainCode;
         this.destination = destination;
+        this.direction = direction;
         this.dueIn = dueIn;
         this.late = late;
         this.expDepart = expDepart;
@@ -80,10 +82,19 @@ public class StationData {
         return "StationData{" +
                 "trainCode='" + trainCode + '\'' +
                 ", destination='" + destination + '\'' +
+                ", direction='" + direction + '\'' +
                 ", dueIn=" + dueIn +
                 ", late=" + late +
                 ", expDepart='" + expDepart + '\'' +
                 ", schArrival='" + schDepart + '\'' +
                 '}';
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
     }
 }

@@ -63,6 +63,13 @@ public class ApiResponseParser {
                             Log.i(LOG_TAG, "Destination: " + readText(parser));
                         }
                         break;
+                    case "Direction":
+                        if (currentStationData != null) {
+                            String text = readText(parser);
+                            currentStationData.setDirection(text);
+                            Log.d(LOG_TAG, "Direction: " + text);
+                        }
+                        break;
                     case "Duein":
                         if (currentStationData != null) {
                             currentStationData.setDueIn(Integer.parseInt(readText(parser)));
